@@ -15,10 +15,8 @@ const VideoCard = memo(function VideoCard({ video, isActive }) {
   const [shareCount, setShareCount] = useState(video.shares ?? 0);
   const [showShareMenu, setShowShareMenu] = useState(false);
 
-  // Auto play/pause via IntersectionObserver
   useVideoObserver(videoRef, { threshold: 0.7 });
 
-  // Sync playing state with video events
   const handlePlay = () => setPlaying(true);
   const handlePause = () => setPlaying(false);
   const handleWaiting = () => setLoading(true);
@@ -45,14 +43,12 @@ const VideoCard = memo(function VideoCard({ video, isActive }) {
   }, []);
 
   const handleLike = useCallback(async () => {
-    // Optimistic update
     const wasLiked = liked;
     setLiked(!wasLiked);
     setLikeCount((c) => (wasLiked ? c - 1 : c + 1));
     try {
       await likeVideo(video.id);
     } catch {
-      // Revert on error
       setLiked(wasLiked);
       setLikeCount((c) => (wasLiked ? c + 1 : c - 1));
     }
@@ -76,18 +72,15 @@ const VideoCard = memo(function VideoCard({ video, isActive }) {
     try {
       await shareVideo(video.id, platform);
     } catch {
-      // Non-critical — tracking failure is silent
     }
   }, [video.id, video.title]);
 
-  // Circumference for the circular progress ring
   const R = 16;
   const circ = 2 * Math.PI * R;
   const dashoffset = circ - (progress / 100) * circ;
 
   return (
     <div className="video-card">
-      {/* Video element */}
       <video
         ref={videoRef}
         src={video.videoUrl}
@@ -105,14 +98,12 @@ const VideoCard = memo(function VideoCard({ video, isActive }) {
         className="video-el"
       />
 
-      {/* Loading spinner */}
       {loading && (
         <div className="spinner-wrap" aria-label="Loading video">
           <div className="spinner" />
         </div>
       )}
 
-      {/* Play/Pause icon overlay */}
       {!loading && !playing && (
         <div className="play-overlay" onClick={togglePlay}>
           <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
@@ -122,16 +113,13 @@ const VideoCard = memo(function VideoCard({ video, isActive }) {
         </div>
       )}
 
-      {/* Bottom gradient + metadata */}
       <div className="card-overlay">
         <div className="meta">
           <p className="video-title">{video.title}</p>
           <p className="video-desc">{video.description}</p>
         </div>
 
-        {/* Right sidebar controls */}
         <div className="controls">
-          {/* Mute toggle */}
           <button className="ctrl-btn" onClick={toggleMute} aria-label={muted ? "Unmute" : "Mute"}>
             {muted ? (
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round">

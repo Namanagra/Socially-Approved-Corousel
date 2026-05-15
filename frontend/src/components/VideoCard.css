@@ -1,186 +1,72 @@
-/* =========================
-   VIDEO CARD
-========================= */
-
 .video-card {
   position: relative;
   width: 100%;
   height: 100%;
-
-  overflow: hidden;
-  border-radius: 22px;
-
   background: #000;
-
-  isolation: isolate;
-
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.28),
-    0 4px 12px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  border-radius: 12px;
 }
-
-/* =========================
-   VIDEO ELEMENT
-========================= */
 
 .video-el {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   display: block;
-
   cursor: pointer;
-
-  transition:
-    transform 0.4s ease,
-    filter 0.3s ease;
 }
-
-.video-card:hover .video-el {
-  transform: scale(1.02);
-  filter: brightness(0.92);
-}
-
-/* =========================
-   LOADING SPINNER
-========================= */
 
 .spinner-wrap {
   position: absolute;
   inset: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-
-  z-index: 4;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 3;
 }
 
 .spinner {
-  width: 42px;
-  height: 42px;
-
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  border-top-color: white;
   border-radius: 50%;
-
-  border: 3px solid rgba(255, 255, 255, 0.18);
-  border-top-color: #fff;
-
-  animation: spin 0.75s linear infinite;
-
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.15);
+  animation: spin 0.7s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+  to { transform: rotate(360deg); }
 }
-
-/* =========================
-   PLAY OVERLAY
-========================= */
 
 .play-overlay {
   position: absolute;
   inset: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  z-index: 5;
+  z-index: 3;
   cursor: pointer;
-
-  animation: fadeIn 0.18s ease;
-}
-
-.play-overlay::before {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background: rgba(0, 0, 0, 0.18);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
-.play-btn {
-  position: relative;
-  z-index: 2;
-
-  width: 78px;
-  height: 78px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.12);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  border: 1px solid rgba(255, 255, 255, 0.14);
-
-  transition:
-    transform 0.2s ease,
-    background 0.2s ease;
-}
-
-.play-btn:hover {
-  transform: scale(1.08);
-  background: rgba(255, 255, 255, 0.18);
+  animation: fadeIn 0.15s ease;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
 }
-
-/* =========================
-   BOTTOM OVERLAY
-========================= */
 
 .card-overlay {
   position: absolute;
-  inset-inline: 0;
   bottom: 0;
-
-  z-index: 3;
-
+  left: 0;
+  right: 0;
+  padding: 80px 12px 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 14px;
-
-  padding: 100px 16px 20px;
-
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.92) 0%,
-    rgba(0, 0, 0, 0.55) 38%,
-    transparent 100%
-  );
+  gap: 12px;
+  z-index: 2;
 }
-
-/* =========================
-   META INFO
-========================= */
 
 .meta {
   flex: 1;
@@ -188,123 +74,66 @@
 }
 
 .video-title {
-  margin: 0 0 6px;
-
   color: #fff;
-
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.3;
-
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 4px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .video-desc {
-  margin: 0;
-
-  color: rgba(255, 255, 255, 0.74);
-
+  color: rgba(255,255,255,0.75);
   font-size: 12px;
-  line-height: 1.45;
-
+  margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-
   overflow: hidden;
 }
-
-/* =========================
-   CONTROL COLUMN
-========================= */
 
 .controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 18px;
-
   flex-shrink: 0;
 }
 
-/* Control Button */
 .ctrl-btn {
-  position: relative;
-
-  width: 52px;
-  height: 52px;
-
+  background: none;
+  border: none;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
-
-  border: none;
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  cursor: pointer;
-
-  transition:
-    transform 0.18s ease,
-    background 0.18s ease;
-}
-
-.ctrl-btn:hover {
-  background: rgba(255, 255, 255, 0.16);
-  transform: translateY(-2px);
+  gap: 4px;
+  padding: 4px;
+  transition: transform 0.15s;
 }
 
 .ctrl-btn:active {
-  transform: scale(0.9);
+  transform: scale(0.88);
 }
 
-/* Count */
 .ctrl-count {
-  color: #fff;
-
+  color: white;
   font-size: 11px;
-  font-weight: 600;
-
+  font-weight: 500;
   letter-spacing: 0.02em;
 }
 
-/* =========================
-   LIKE ANIMATION
-========================= */
-
 .like-btn.liked {
-  animation: heartPop 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  animation: heartPop 0.35s cubic-bezier(0.36,0.07,0.19,0.97);
 }
 
 @keyframes heartPop {
-  0% {
-    transform: scale(1);
-  }
-
-  30% {
-    transform: scale(1.4);
-  }
-
-  60% {
-    transform: scale(0.88);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.35); }
+  70%  { transform: scale(0.9); }
+  100% { transform: scale(1); }
 }
-
-/* =========================
-   SHARE MENU
-========================= */
 
 .share-wrap {
   position: relative;
@@ -312,115 +141,42 @@
 
 .share-menu {
   position: absolute;
+  bottom: 100%;
   right: 0;
-  bottom: calc(100% + 10px);
-
-  min-width: 160px;
-
+  background: rgba(20, 20, 20, 0.95);
+  border: 0.5px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 6px 4px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-
-  padding: 8px;
-
-  border-radius: 16px;
-
-  background: rgba(18, 18, 18, 0.92);
-
-  border: 1px solid rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-
-  box-shadow:
-    0 12px 32px rgba(0, 0, 0, 0.35),
-    0 4px 12px rgba(0, 0, 0, 0.2);
-
-  z-index: 20;
-
-  animation: slideUp 0.2s ease;
+  gap: 2px;
+  min-width: 140px;
+  z-index: 10;
+  animation: slideUp 0.18s ease;
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(8px) scale(0.96);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .share-menu button {
+  background: none;
   border: none;
-  outline: none;
-
-  padding: 10px 12px;
-
-  background: transparent;
-
-  border-radius: 10px;
-
-  color: #fff;
-
+  color: white;
   font-size: 13px;
-  font-weight: 500;
-
+  padding: 8px 12px;
   text-align: left;
   cursor: pointer;
-
-  transition:
-    background 0.16s ease,
-    transform 0.16s ease;
+  border-radius: 6px;
+  transition: background 0.12s;
+  white-space: nowrap;
 }
 
 .share-menu button:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateX(2px);
+  background: rgba(255,255,255,0.1);
 }
-
-/* =========================
-   PROGRESS RING
-========================= */
 
 .progress-ring {
-  transform: rotate(-90deg);
-}
-
-/* =========================
-   MOBILE OPTIMIZATION
-========================= */
-
-@media (max-width: 768px) {
-  .video-card {
-    border-radius: 18px;
-  }
-
-  .card-overlay {
-    padding: 90px 14px 18px;
-  }
-
-  .video-title {
-    font-size: 14px;
-  }
-
-  .video-desc {
-    font-size: 11px;
-  }
-
-  .ctrl-btn {
-    width: 48px;
-    height: 48px;
-  }
-
-  .play-btn {
-    width: 68px;
-    height: 68px;
-  }
-
-  .share-menu {
-    min-width: 145px;
-  }
+  transform: none;
 }

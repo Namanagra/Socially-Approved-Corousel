@@ -9,11 +9,9 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Modal state
   const [modalOpen, setModalOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Fetch all videos on mount
   useEffect(() => {
     let cancelled = false;
     (async () => {

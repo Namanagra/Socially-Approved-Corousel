@@ -1,11 +1,5 @@
 import { useEffect, useRef } from "react";
 
-/**
- * useVideoObserver
- * Attaches an IntersectionObserver to a <video> ref.
- * - Plays when >= threshold% visible
- * - Pauses (and resets) when out of view
- */
 export function useVideoObserver(videoRef, { threshold = 0.7, resetOnHide = true } = {}) {
   const observerRef = useRef(null);
 
@@ -17,7 +11,6 @@ export function useVideoObserver(videoRef, { threshold = 0.7, resetOnHide = true
       ([entry]) => {
         if (entry.isIntersecting) {
           video.play().catch(() => {
-            // Autoplay blocked — browser requires muted or user gesture
           });
         } else {
           video.pause();

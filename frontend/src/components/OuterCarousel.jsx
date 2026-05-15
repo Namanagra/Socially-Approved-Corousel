@@ -5,12 +5,7 @@ import "swiper/css";
 import "swiper/css/virtual";
 import "./OuterCarousel.css";
 
-/**
- * OuterCarousel
- * Renders a horizontally scrollable thumbnail grid (20-30 videos).
- * Uses Swiper's Virtual module so only nearby DOM slides exist.
- * Clicking a thumbnail opens InnerSlider at that index.
- */
+
 export default function OuterCarousel({ videos, onVideoClick }) {
   const [hoveredIdx, setHoveredIdx] = useState(null);
 
@@ -33,7 +28,7 @@ export default function OuterCarousel({ videos, onVideoClick }) {
 
   return (
     <section className="outer-carousel">
-      <h2 className="section-title">Socially Approved</h2>
+      <h2 className="section-title">BoreDom</h2>
 
       <Swiper
         modules={[Virtual, FreeMode]}
@@ -42,8 +37,8 @@ export default function OuterCarousel({ videos, onVideoClick }) {
         slidesPerView={2.3}
         spaceBetween={10}
         breakpoints={{
-          480:  { slidesPerView: 3.2, spaceBetween: 12 },
-          768:  { slidesPerView: 4.2, spaceBetween: 14 },
+          480: { slidesPerView: 3.2, spaceBetween: 12 },
+          768: { slidesPerView: 4.2, spaceBetween: 14 },
           1024: { slidesPerView: 5.5, spaceBetween: 16 },
         }}
         className="outer-swiper"
@@ -60,7 +55,7 @@ export default function OuterCarousel({ videos, onVideoClick }) {
               onKeyDown={(e) => e.key === "Enter" && handleClick(idx)}
               aria-label={`Play ${video.title}`}
             >
-              {/* Thumbnail image — lazy loaded */}
+              { }
               <img
                 src={video.thumbnail}
                 alt={video.title}
@@ -69,7 +64,6 @@ export default function OuterCarousel({ videos, onVideoClick }) {
                 decoding="async"
               />
 
-              {/* Hover overlay */}
               <div className="thumb-overlay">
                 <div className="play-icon" aria-hidden="true">
                   <svg width="32" height="32" viewBox="0 0 32 32">
@@ -79,7 +73,6 @@ export default function OuterCarousel({ videos, onVideoClick }) {
                 </div>
               </div>
 
-              {/* Bottom caption */}
               <div className="thumb-caption">
                 <p className="thumb-title">{video.title}</p>
                 <p className="thumb-likes">
