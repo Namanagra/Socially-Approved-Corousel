@@ -28,7 +28,7 @@ app.use(
   })
 );
 
-app.options("*", cors());
+// app.options("*", cors());
 
 app.use(express.json());
 
@@ -36,13 +36,13 @@ app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
 });
-// app.use("/api", videoRoutes);
+app.use("/api", videoRoutes);
 
-app.use("/api/videos", videoRoutes);
+// app.use("/api/videos", videoRoutes);
 
-app.use("/api/like", videoRoutes);
+// app.use("/api/like", videoRoutes);
 
-app.use("/api/share", videoRoutes);
+// app.use("/api/share", videoRoutes);
 
 app.get("/api/health", (req, res) => {
     res.json({ status: "ok", timestamp: new Date().toISOString() });
