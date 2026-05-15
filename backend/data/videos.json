@@ -1,0 +1,352 @@
+[
+  {
+    "id": "v001",
+    "title": "Sunset Beach Vibes",
+    "description": "Golden hour at the beach — waves, sand, and pure calm.",
+    "videoUrl": "https://media.istockphoto.com/id/1483420270/video/tropical-beach-sunrise-with-golden-sun-rays-over-the-sand-and-sea.mp4?s=mp4-640x640-is&k=20&c=WjRCP79AD5pxVk3Cv91GV7bVhlL2K0UDQytOMrHHM30=",
+    "thumbnail": "https://picsum.photos/seed/v001/400/700",
+    "likes": 1240,
+    "shares": 85,
+    "comments": []
+  },
+  {
+    "id": "v002",
+    "title": "City Timelapse Night",
+    "description": "Streets alive after dark — the city never sleeps.",
+    "videoUrl": "https://static.videezy.com/system/resources/previews/000/006/278/original/Sydney_night_timelapse.mp4",
+    "thumbnail": "https://picsum.photos/seed/v002/400/700",
+    "likes": 980,
+    "shares": 62,
+    "comments": []
+  },
+  {
+    "id": "v003",
+    "title": "Mountain Trail Run",
+    "description": "Early morning trail run through misty mountain paths.",
+    "videoUrl": "https://static.videezy.com/system/resources/previews/000/046/681/original/CB026.mp4",
+    "thumbnail": "https://picsum.photos/seed/v003/400/700",
+    "likes": 2310,
+    "shares": 140,
+    "comments": []
+  },
+  {
+    "id": "v004",
+    "title": "Cooking Ramen at Home",
+    "description": "Rich tonkotsu broth from scratch — 12 hours well spent.",
+    "videoUrl": "https://v.ftcdn.net/18/19/56/05/700_F_1819560596_uSXdLdO4Fjcc1z5iabGU5jhyzjhrKoyZ_ST.mp4",
+    "thumbnail": "https://picsum.photos/seed/v004/400/700",
+    "likes": 3450,
+    "shares": 210,
+    "comments": []
+  },
+  {
+    "id": "v005",
+    "title": "Skateboard Tricks",
+    "description": "Nollie, kickflip, and heelflip combos in slow motion.",
+    "videoUrl": "https://static.videezy.com/system/resources/previews/000/007/084/original/Cu_Skateboard.mp4",
+    "thumbnail": "https://picsum.photos/seed/v005/400/700",
+    "likes": 870,
+    "shares": 44,
+    "comments": []
+  },
+  {
+    "id": "v006",
+    "title": "Rainy Cafe Window",
+    "description": "Coffee, jazz, and rain on the glass — total comfort.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "thumbnail": "https://picsum.photos/seed/v006/400/700",
+    "likes": 1890,
+    "shares": 99,
+    "comments": []
+  },
+  {
+    "id": "v007",
+    "title": "Deep Sea Diving",
+    "description": "Coral reefs and sea turtles 40 meters below the surface.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+    "thumbnail": "https://picsum.photos/seed/v007/400/700",
+    "likes": 4100,
+    "shares": 320,
+    "comments": []
+  },
+  {
+    "id": "v008",
+    "title": "Pottery Throwing",
+    "description": "Watching clay transform on the wheel is pure meditation.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+    "thumbnail": "https://picsum.photos/seed/v008/400/700",
+    "likes": 2760,
+    "shares": 175,
+    "comments": []
+  },
+  {
+    "id": "v009",
+    "title": "Street Food Bangkok",
+    "description": "Pad thai, mango sticky rice, and som tam — all in one night.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "thumbnail": "https://picsum.photos/seed/v009/400/700",
+    "likes": 5200,
+    "shares": 410,
+    "comments": []
+  },
+  {
+    "id": "v010",
+    "title": "Northern Lights Norway",
+    "description": "Aurora borealis dancing over a frozen fjord at midnight.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+    "thumbnail": "https://picsum.photos/seed/v010/400/700",
+    "likes": 6800,
+    "shares": 530,
+    "comments": []
+  },
+  {
+    "id": "v011",
+    "title": "Bouldering Indoor",
+    "description": "V6 problem solved after 3 days of attempts.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    "thumbnail": "https://picsum.photos/seed/v011/400/700",
+    "likes": 1120,
+    "shares": 58,
+    "comments": []
+  },
+  {
+    "id": "v012",
+    "title": "Desert Dunes at Dawn",
+    "description": "Sahara silence before the sun hits — absolutely surreal.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+    "thumbnail": "https://picsum.photos/seed/v012/400/700",
+    "likes": 3300,
+    "shares": 245,
+    "comments": []
+  },
+  {
+    "id": "v013",
+    "title": "Film Photography Walk",
+    "description": "Shooting a roll of Kodak Gold through old Tokyo streets.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "thumbnail": "https://picsum.photos/seed/v013/400/700",
+    "likes": 1450,
+    "shares": 88,
+    "comments": []
+  },
+  {
+    "id": "v014",
+    "title": "Sourdough Bread Bake",
+    "description": "72-hour cold ferment, perfect crust — open crumb goals.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnail": "https://picsum.photos/seed/v014/400/700",
+    "likes": 2100,
+    "shares": 130,
+    "comments": []
+  },
+  {
+    "id": "v015",
+    "title": "Freestyle Football",
+    "description": "Around the world, ATW combo to neck stall. Clean.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "thumbnail": "https://picsum.photos/seed/v015/400/700",
+    "likes": 3780,
+    "shares": 290,
+    "comments": []
+  },
+  {
+    "id": "v016",
+    "title": "Autumn Forest Walk",
+    "description": "Crunchy leaves underfoot and golden canopy overhead.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "thumbnail": "https://picsum.photos/seed/v016/400/700",
+    "likes": 920,
+    "shares": 47,
+    "comments": []
+  },
+  {
+    "id": "v017",
+    "title": "Cocktail Mixology Lab",
+    "description": "Infused syrups, smoked ice, and a negroni that took 2 hours.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "thumbnail": "https://picsum.photos/seed/v017/400/700",
+    "likes": 1670,
+    "shares": 102,
+    "comments": []
+  },
+  {
+    "id": "v018",
+    "title": "Paragliding Alps",
+    "description": "Launching from 2400m and gliding over Swiss valleys.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "thumbnail": "https://picsum.photos/seed/v018/400/700",
+    "likes": 5500,
+    "shares": 440,
+    "comments": []
+  },
+  {
+    "id": "v019",
+    "title": "Urban Sketching",
+    "description": "Watercolour and ink in a busy Lisbon cafe.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+    "thumbnail": "https://picsum.photos/seed/v019/400/700",
+    "likes": 780,
+    "shares": 36,
+    "comments": []
+  },
+  {
+    "id": "v020",
+    "title": "Japanese Tea Ceremony",
+    "description": "Matcha whisked to perfection — every movement intentional.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+    "thumbnail": "https://picsum.photos/seed/v020/400/700",
+    "likes": 2890,
+    "shares": 195,
+    "comments": []
+  },
+  {
+    "id": "v021",
+    "title": "Neon Nights Shibuya",
+    "description": "Crossing the busiest intersection in the world at 1am.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "thumbnail": "https://picsum.photos/seed/v021/400/700",
+    "likes": 4200,
+    "shares": 360,
+    "comments": []
+  },
+  {
+    "id": "v022",
+    "title": "Cave Exploration",
+    "description": "Crawling into a 300m-deep cave system in Slovenia.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+    "thumbnail": "https://picsum.photos/seed/v022/400/700",
+    "likes": 3100,
+    "shares": 220,
+    "comments": []
+  },
+  {
+    "id": "v023",
+    "title": "Latte Art Practice",
+    "description": "Rosetta, tulip, and a swan — 200 pours to get here.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    "thumbnail": "https://picsum.photos/seed/v023/400/700",
+    "likes": 1340,
+    "shares": 74,
+    "comments": []
+  },
+  {
+    "id": "v024",
+    "title": "Whale Watching Pacific",
+    "description": "Humpback breach 10 metres from the boat.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4",
+    "thumbnail": "https://picsum.photos/seed/v024/400/700",
+    "likes": 7200,
+    "shares": 620,
+    "comments": []
+  },
+  {
+    "id": "v025",
+    "title": "Piano Improvisation",
+    "description": "Late night jazz improvisation — no plan, just feeling.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "thumbnail": "https://picsum.photos/seed/v025/400/700",
+    "likes": 2450,
+    "shares": 160,
+    "comments": []
+  },
+  {
+    "id": "v026",
+    "title": "Wildflower Meadow Drone",
+    "description": "Aerial drift over a kilometre of blooming lavender.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    "thumbnail": "https://picsum.photos/seed/v026/400/700",
+    "likes": 3890,
+    "shares": 285,
+    "comments": []
+  },
+  {
+    "id": "v027",
+    "title": "Glass Blowing Studio",
+    "description": "Molten glass shaped into a vase in under four minutes.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    "thumbnail": "https://picsum.photos/seed/v027/400/700",
+    "likes": 1980,
+    "shares": 118,
+    "comments": []
+  },
+  {
+    "id": "v028",
+    "title": "Street Dance Battle",
+    "description": "Popping vs locking — underground cypher in Paris.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    "thumbnail": "https://picsum.photos/seed/v028/400/700",
+    "likes": 4600,
+    "shares": 390,
+    "comments": []
+  },
+  {
+    "id": "v029",
+    "title": "Bonsai Pruning Session",
+    "description": "Shaping a 40-year-old juniper — patience made visible.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    "thumbnail": "https://picsum.photos/seed/v029/400/700",
+    "likes": 1560,
+    "shares": 92,
+    "comments": []
+  },
+  {
+    "id": "v030",
+    "title": "Ice Climbing Canada",
+    "description": "Frontpointing up a frozen waterfall in the Rockies.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    "thumbnail": "https://picsum.photos/seed/v030/400/700",
+    "likes": 5100,
+    "shares": 415,
+    "comments": []
+  },
+  {
+    "id": "v031",
+    "title": "Sushi Omakase Prep",
+    "description": "Chef's knife work at 6am — fish, rice, and pure craft.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+    "thumbnail": "https://picsum.photos/seed/v031/400/700",
+    "likes": 3670,
+    "shares": 270,
+    "comments": []
+  },
+  {
+    "id": "v032",
+    "title": "Van Life Morning Routine",
+    "description": "Waking up in Patagonia with no agenda and a French press.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+    "thumbnail": "https://picsum.photos/seed/v032/400/700",
+    "likes": 2200,
+    "shares": 145,
+    "comments": []
+  },
+  {
+    "id": "v033",
+    "title": "Night Market Chiang Mai",
+    "description": "Lanterns, grilled corn, and silk scarves at midnight.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+    "thumbnail": "https://picsum.photos/seed/v033/400/700",
+    "likes": 2980,
+    "shares": 210,
+    "comments": []
+  },
+  {
+    "id": "v034",
+    "title": "Surfing Big Waves",
+    "description": "Paddling into 4m swells at Nazaré — nothing else like it.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+    "thumbnail": "https://picsum.photos/seed/v034/400/700",
+    "likes": 8100,
+    "shares": 700,
+    "comments": []
+  },
+  {
+    "id": "v035",
+    "title": "Stargazing Atacama",
+    "description": "Milky Way so bright it casts a shadow — no light pollution.",
+    "videoUrl": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+    "thumbnail": "https://picsum.photos/seed/v035/400/700",
+    "likes": 6400,
+    "shares": 510,
+    "comments": []
+  }
+]
