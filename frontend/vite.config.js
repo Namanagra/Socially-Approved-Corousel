@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": "https://socially-approved-corousel.onrender.com"
+      "/api": "http://localhost:5000"
     }
   }
 })
