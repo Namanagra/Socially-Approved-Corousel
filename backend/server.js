@@ -8,12 +8,27 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(
-    cors({
-        origin: ["http://localhost:5173", "http://localhost:3000"],
-        methods: ["GET", "POST"],
-        allowedHeaders: ["Content-Type"],
-    })
+  cors({
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        "http://localhost:5173",
+        "https://socially-approved-corousel.vercel.app"
+      ];
+
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  })
 );
+
+app.options("*", cors());
 
 app.use(express.json());
 
@@ -21,13 +36,13 @@ app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
     next();
 });
+app.use("/api", videoRoutes);
 
+// app.use("/api/videos", videoRoutes);
 
-app.use("/api/videos", videoRoutes);
+// app.use("/api/like", videoRoutes);
 
-app.use("/api/like", videoRoutes);
-
-app.use("/api/share", videoRoutes);
+// app.use("/api/share", videoRoutes);
 
 app.get("/api/health", (req, res) => {
     res.json({ status: "ok", timestamp: new Date().toISOString() });
